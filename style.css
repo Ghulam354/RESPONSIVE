@@ -1,0 +1,95 @@
+*{
+    border:2px solid black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* buat web */
+.Responsif{
+    width:90%;
+    height:100px;
+
+    background-color:blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t1{
+    color: gray;
+}
+.t2{
+    color:white;
+}
+.t3{
+    color: black;
+}
+.t4{
+    color:red;
+}
+/* buat android */
+@media screen and (max-width:320px){
+    body{display: inline;justify-content:center;align-items:center;}
+    .Responsif{transform:translateX(-100%);transform:translateX(5%); background-color: black;margin-top:10px;}
+    .t1{
+        font-size:15px;
+        color: gray;
+    }
+    .t2{
+        font-size:15px;
+        color:white;
+    }
+    .t3{
+        font-size:15px;
+        color: blue;
+    }
+    .t4{
+        font-size: 15px;
+        color:red;
+    }
+}
+/* buat kurang dari dekstop hingga 320px */
+@media screen and (min-width:321px){
+    body{display: inline;justify-content:center;align-items:center;}
+    .Responsif{transform:translateX(-100%);transform:translateX(5%); background-color: red;margin-top:10px;}
+    .t1{
+        font-size:15px;
+        color: gray;
+    }
+    .t2{
+        font-size:15px;
+        color:white;
+    }
+    .t3{
+        font-size:15px;
+        color: blue;
+    }
+    .t4{
+        font-size: 15px;
+        color:red;
+    }
+    
+}
+
+@media screen and (min-width:1536px){
+    body{display: flex;}
+    .Responsif{transform:translateX(-1px); background-color:blue;}
+    .t1{
+        font-size:15px;
+        color: gray;
+    }
+    .t2{
+        font-size:15px;
+        color:white;
+    }
+    .t3{
+        font-size:15px;
+        color: black;
+    }
+    .t4{
+        font-size: 15px;
+        color:red;
+    }    
+}
